@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= typeof title !="undefined" ? title:'Cooking Blog By Powell' %>
+    </title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Sans&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto+Condensed:ital,wght@0,300;1,400&family=Rubik:wght@300;500&family=Zen+Kaku+Gothic+Antique&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container-xxl px-md-5 bg-white shadow-lg">
+
+        <!-- <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark dark-decoration-none">
+                <img src="/img/logo.svg" alt="Cooking Blog" height="68" width="229" srcset="">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <a href="/" class="nav-link px-2 link-secondary">Home</a>
+                    <a href="/about" class="nav-link px-2 link-secondary">About</a>
+                    <a href="/submit-recipe" class="nav-link px-2 link-secondary">Submit</a>
+                    <a href="/contact" class="nav-link px-2 link-secondary">Contact</a>
+                </li>
+            </ul>
+            <div class="col-md-3 teext-end">
+                <form method="POST" action="/search">
+                    <input type="search" name="searchTerm" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+        </header> -->
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <img src="/img/logo.svg" alt="Cooking Blog" height="68" width="229" srcset="">
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+                        <li><a href="/chat" class="nav-link px-2 link-dark">Chat</a></li>
+                        <li><a href="/submit-recipe" class="nav-link px-2 link-dark">Submit</a></li>
+                        <li><a href="/contact" class="nav-link px-2 link-dark">Contact</a></li>
+                    </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" method="POST" action="/search">
+                        <input type="search" name="searchTerm" class="form-control" placeholder="Search..."
+                            aria-label="Search">
+                    </form>
+
+                    <!-- <div class="dropdown text-end">
+                  <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div> -->
+                </div>
+            </div>
+        </header>
+        <main>
+            <%- body -%>
+        </main>
+        <footer class="py-5">
+            <p>By Powell</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>    
+</body>
+
+</html>
